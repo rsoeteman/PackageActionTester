@@ -1,0 +1,16 @@
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\PackageActionTester.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\PackageActionTester.pdb
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\obj\UmbracoV7\PackageActionTester.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\obj\UmbracoV7\PackageActionTester.pdb
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\businesslogic.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\cms.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\interfaces.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Web.Http.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\Umbraco.Core.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\umbraco.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Net.Http.Formatting.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Web.Http.WebHost.dll
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Web.Http.xml
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Net.Http.Formatting.xml
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\System.Web.Http.WebHost.xml
+F:\umbraco\GitHub\PackageActionTester\PackageActionTester\PackageActionTester\bin\Newtonsoft.Json.dll

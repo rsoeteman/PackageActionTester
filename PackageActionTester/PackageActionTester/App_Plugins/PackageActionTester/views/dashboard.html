@@ -1,0 +1,14 @@
+﻿<div ng-controller="PackageActionTester.PackageActionTesterController">
+    <h4>Package action tester</h4>
+    <p>dkdd</p>
+    <div class="control-group">
+        <label>Select action</label>
+            <select ng-model="selectedItem" ng-options="action.Alias for action in packageActions"></select>
+    </div>
+    <div class="control-group">
+        <textarea id="packageactionsEditor" rows="15" class="umb-editor umb-textarea textstring">
+
+</textarea>
+        <pre>{{packageActions|json}}</pre>
+    </div>
+</div>
