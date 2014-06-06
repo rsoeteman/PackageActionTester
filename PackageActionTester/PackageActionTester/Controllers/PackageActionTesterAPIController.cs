@@ -22,12 +22,14 @@ namespace PackageActionTester.Controllers
         [HttpGet]
         public IEnumerable<PackageActionTesterModel> GetAll()
         {
-            //return TypeFinder .FindClassesOfType<IPackageAction>()
-
-            //Add dynamic assemblies 
             var foundValueParsers = TypeFinder.FindClassesOfType<IPackageAction>();
-            var lst = foundValueParsers.Select(type => Activator.CreateInstance(type) as IPackageAction).Select(a => new PackageActionTesterModel { Alias = a.Alias(), SampleXMl = a.GetSampleOrDefault() }).ToList();
-            return lst;
+            return foundValueParsers.Select(type => Activator.CreateInstance(type) as IPackageAction).Select(a => new PackageActionTesterModel { Alias = a.Alias(), SampleXMl = a.GetSampleOrDefault() }).ToList();
+        }
+
+        [HttpPost]
+        public string Install(PackageActionExecuteModel model)
+        {
+            return "niks";
         }
     }
 }

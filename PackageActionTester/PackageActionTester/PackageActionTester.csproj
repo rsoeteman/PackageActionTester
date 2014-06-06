@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Controllers\PackageActionTesterAPIController.cs" />
     <Compile Include="Extensions\PackageActionExtensions.cs" />
+    <Compile Include="Models\PackageActionExecuteModel.cs" />
     <Compile Include="Models\PackageActionTesterModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

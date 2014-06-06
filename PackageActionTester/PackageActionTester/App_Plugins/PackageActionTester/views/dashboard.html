@@ -1,14 +1,14 @@
 ﻿<div ng-controller="PackageActionTester.PackageActionTesterController">
     <h4>Package action tester</h4>
-    <p>dkdd</p>
+    <p>Select actions or copy actions from a package xml file to the editor and install or uninstall actiions to see if package actions get executed correctly.</p>
     <div class="control-group">
-        <label>Select action</label>
-            <select ng-model="selectedItem" ng-options="action.Alias for action in packageActions"></select>
+        <select ng-model="selectedPackageAction" ng-options="action.Alias for action in packageActions" ng-change="selectAction()">
+            <option  value="">Select.....</option>
+        </select>
     </div>
     <div class="control-group">
-        <textarea id="packageactionsEditor" rows="15" class="umb-editor umb-textarea textstring">
-
-</textarea>
-        <pre>{{packageActions|json}}</pre>
+        <textarea id="packageactionsEditor" rows="15" class="umb-editor umb-textarea textstring" ng-model="packageActionsXML" >
+     </textarea>
     </div>
+         <a class="btn btn-success" ng-click="install()">Install actions</a>&nbsp;&nbsp;<a class="btn btn-danger" ng-click="uninstall()">Uninstall actions</a>
 </div>
