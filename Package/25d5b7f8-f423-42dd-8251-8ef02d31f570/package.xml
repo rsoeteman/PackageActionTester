@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>package.manifest</guid>
+      <orgPath>/App_Plugins/PackageActionTester</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+    <file>
+      <guid>packageactiontester.js</guid>
+      <orgPath>/App_Plugins/PackageActionTester/controllers</orgPath>
+      <orgName>packageactiontester.js</orgName>
+    </file>
+    <file>
+      <guid>packageactiontester.css</guid>
+      <orgPath>/App_Plugins/PackageActionTester/css</orgPath>
+      <orgName>packageactiontester.css</orgName>
+    </file>
+    <file>
+      <guid>dashboard.html</guid>
+      <orgPath>/App_Plugins/PackageActionTester/views</orgPath>
+      <orgName>dashboard.html</orgName>
+    </file>
+    <file>
+      <guid>PackageActionTester.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>PackageActionTester.dll</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Package action tester</name>
+      <version>1.0</version>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>http://soetemansoftware.nl/</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Richard Soeteman</name>
+      <website>http://www.soetemansoftware.nl/</website>
+    </author>
+    <readme><![CDATA[This package helps you test package actions.
+
+After you installed the package you have an extra dashboard on the developer section where you can select or drop package action xml to install or uninstall.
+
+The package action in this package is also tested with this tool.]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions>
+    <Action runat="install" alias="addDashboardSection" dashboardAlias="PackageActionDashboardSection">
+      <section>
+        <areas>
+          <area>developer</area>
+        </areas>
+        <tab caption="Package action tester">
+          <control>/app_plugins/PackageActionTester/views/dashboard.html</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+</umbPackage>

@@ -5,7 +5,7 @@ namespace PackageActionTester.Models
     /// <summary>
     /// Model for package action tester
     /// </summary>
-    public class PackageActionTesterModel
+    public class PackageActionModel
     {
         /// <summary>
         /// Gets or sets the alias of the package action.

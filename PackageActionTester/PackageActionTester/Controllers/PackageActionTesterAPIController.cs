@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Http;
 using PackageActionTester.Extensions;
 using PackageActionTester.Models;
+using PackageActionTester.Services;
 using Umbraco.Core;
 using Umbraco.Web.Editors;
 using umbraco.cms.businesslogic.packager;
@@ -20,16 +21,20 @@ namespace PackageActionTester.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IEnumerable<PackageActionTesterModel> GetAll()
+        public IEnumerable<PackageActionModel> GetAll()
         {
-            var foundValueParsers = TypeFinder.FindClassesOfType<IPackageAction>();
-            return foundValueParsers.Select(type => Activator.CreateInstance(type) as IPackageAction).Select(a => new PackageActionTesterModel { Alias = a.Alias(), SampleXMl = a.GetSampleOrDefault() }).ToList();
+         return   PackageActionService.GetAll();
         }
 
+        /// <summary>
+        /// Executes the package actions.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns></returns>
         [HttpPost]
-        public string Install(PackageActionExecuteModel model)
+        public IEnumerable<PackageActionResult> ExecutePackageActions(PackageActionExecuteModel model)
         {
-            return "niks";
+            return PackageActionService.ExecutePackageActions(model);
         }
     }
 }
